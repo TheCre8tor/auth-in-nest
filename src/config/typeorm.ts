@@ -19,4 +19,4 @@ export const typeorm = registerAs('database', () => {
   return { ...dataSourceOptions, autoLoadEntities: true };
 });
 
-export default new DataSource(dataSourceOptions as DataSourceOptions);
+export default new DataSource(dataSourceOptions);
