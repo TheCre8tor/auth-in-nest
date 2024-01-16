@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid';
 import {
   BeforeInsert,
   Column,
@@ -8,6 +7,8 @@ import {
   PrimaryColumn,
   UpdateDateColumn,
 } from 'typeorm';
+
+import { nanoid } from 'nanoid';
 
 @Entity()
 class Identity {
@@ -37,15 +38,6 @@ class Identity {
 
   @Column()
   is_admin_user: boolean;
-
-  @Column()
-  last_login: Date;
-
-  @Column()
-  access_token: string;
-
-  @Column()
-  refresh_token: string;
 
   @CreateDateColumn()
   created_at: Date;
