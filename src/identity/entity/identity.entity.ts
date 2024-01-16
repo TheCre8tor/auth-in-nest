@@ -61,3 +61,5 @@ class Identity {
     this.id = nanoid();
   }
 }
+
+export default Identity;
